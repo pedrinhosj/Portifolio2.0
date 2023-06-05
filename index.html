@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portifolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="./scripts/index.js" defer type="module"></script>
+</head>
+
+<body>
+  <aside>
+    <ul>
+      <li id="session1-btn" class="actived">
+        <i class="fa-solid fa-house"></i>
+        <h4>Home</h5>
+      </li>
+      <li id="session2-btn">
+        <i class="fa-solid fa-user"></i>
+        <h4>About-Me</h5>
+      </li>
+      <li id="session3-btn">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h4>Experience</h5>
+      </li>
+      <li id="session4-btn">
+        <i class="fa-solid fa-file"></i>
+        <h4>Projects</h5>
+      </li>
+      <li id="session5-btn">
+        <i class="fa-solid fa-envelope"></i>
+        <h4>Contact-Me</h5>
+      </li>
+    </ul>
+  </aside>
+  <main>
+    <section id="session1" class="open">
+      <h1>1</h1>
+    </section>
+    <section id="session2">
+      <h1>2</h1>
+    </section>
+    <section id="session3">
+      <h1>3</h1>
+    </section>
+    <section id="session4">
+      <h1>4</h1>
+    </section>
+    <section id="session5">
+      <h1>5</h1>
+    </section>
+    <div class="menu-mobile">
+      <ul>
+        <div class="toggle"><i class="fa-solid fa-house"></i></div>
+
+        <li style="--i: 1"><i class="fa-solid fa-user"></i></li>
+        <li style="--i: 2"><i class="fa-solid fa-lightbulb"></i></li>
+        <li style="--i: 3"><i class="fa-solid fa-file"></i></i></li>
+        <li style="--i: 4"><i class="fa-solid fa-envelope"></i></li">
+      </ul>
+    </div>
+  </main>
+  <div class="swapMenu-btn">
+    <i id="current-icon" class="fa-solid fa-mobile"></i>
+    <H5>Swap Menu</H5>
+  </div>
+</body>
+
+</html>
