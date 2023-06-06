@@ -64,7 +64,7 @@ const classIcons = {
   session1: 'fa-solid fa-house',
   session2: 'fa-solid fa-user',
   session3: 'fa-solid fa-lightbulb',
-  session4: 'fa-solid fa-file',
+  session4: 'fa-solid fa-paperclip',
   session5: 'fa-solid fa-envelope'
 }
 
