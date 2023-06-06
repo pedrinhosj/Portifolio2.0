@@ -17,11 +17,12 @@
   font-family: Poppins;
 }
 
-
-body {
-  position: relative;
+.container {
+  position: absolute;
   top: 0;
+  left: 0;
   bottom: 0;
+  right: 0;
   display: grid;
   grid-template-columns: 100px 1fr;
   background-color: var(--defaul-background);
@@ -42,14 +43,14 @@ section.open {
 }
 
 @media(max-width: 800px) {
-  body {
+  .container {
     grid-template-columns: 1fr;
     grid-template-rows: 70px 1fr;
   }
 }
 
 @media(max-width: 600px) {
-  body {
+  .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
