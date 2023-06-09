@@ -1,4 +1,5 @@
 aside {
+  width: 100px;
   height: 100%;
   border-right: 15px solid var(--blue);
   color: var(--defaul-colorElements);
@@ -25,6 +26,7 @@ aside ul li {
   flex-direction: column;
   align-items: center;
   font-size: 10px;
+  cursor: pointer;
 }
 
 aside ul li:hover {
@@ -115,6 +117,7 @@ aside ul li.actived::before {
 
   border-radius: 50%;
   background-color: var(--blue);
+  cursor: pointer;
 }
 
 .toggle i {
@@ -143,6 +146,7 @@ aside ul li.actived::before {
 
   background-color: var(--blue);
   display: none;
+  cursor: pointer;
 }
 
 ul.actived li {
@@ -164,7 +168,8 @@ ul.actived li {
   height: 55px;
   border-radius: 50%;
 
-  background-color: var(--defaul-hover);
+  background-color: var(--blue);
+  opacity: 0.5;
   box-shadow: 0 0 5px 5px var(--background-2);
   cursor: pointer;
   transition: 0.5s;
@@ -188,6 +193,7 @@ ul.actived li {
 .swapMenu-btn:hover {
   background-color: transparent;
   box-shadow: none;
+  opacity: 1;
 }
 
 .swapMenu-btn:hover h5 {
@@ -199,7 +205,6 @@ ul.actived li {
   color: var(--defaul-colorElements);
 }
 
-
 @keyframes openMenu {
   from {
     transform: rotate(0deg) translateX(200px)
@@ -208,6 +213,7 @@ ul.actived li {
 
 @media(max-width: 800px) {
   aside {
+    width: 100%;
     height: 70px;
     border: none;
     border-bottom: 7px solid var(--blue);

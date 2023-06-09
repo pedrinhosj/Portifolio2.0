@@ -1,0 +1,96 @@
+#session1 {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.myName {
+  line-height: 0.8;
+}
+
+.myName p {
+  font-weight: 800;
+  color: var(--defaul-colorElements);
+}
+
+.myName h1 {
+  font-size: 90px;
+  color: var(--blue);
+}
+
+@keyframes border {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#session1 h4 {
+  color: var(--defaul-colorElements);
+  border-right: 4px solid var(--blue);
+  animation: border 0.8s infinite;
+}
+
+.social-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  color: var(--defaul-colorElements);
+  background-color: var(--blue);
+  transition: 0.7s;
+
+  cursor: pointer;
+}
+
+.social-icons a:hover {
+  background-color: transparent;
+}
+
+.social-icons i {
+  transition: 0.7s;
+}
+
+.social-icons h6 {
+  display: none;
+  text-align: center;
+}
+
+.social-icons a:hover i {
+  font-size: 26px;
+}
+
+.social-icons a:hover h6 {
+  display: block;
+}
+
+#session1 h5 {
+  cursor: pointer;
+  color: var(--defaul-hover);
+  transition: 0.7s;
+}
+
+#session1 h5:hover {
+  color: var(--defaul-colorElements);
+}
+
+@media(max-width: 400px) {
+  .myName h1 {
+    font-size: 75px;
+  }
+
+  #session1 h4 {
+    font-size: 12px;
+  }
+}

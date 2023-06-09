@@ -1,3 +1,4 @@
+import { animationText } from "./home.js";
 import { checkedDirection, selectSession, swapMenu } from "./navigation.js";
 
 document.querySelectorAll("aside ul li").forEach(li => li.addEventListener('click', selectSession))
@@ -37,3 +38,5 @@ window.addEventListener("keydown", (ev) => {
 document.querySelectorAll(".menu-mobile ul li").forEach(icon => icon.addEventListener("click", selectSession))
 
 document.querySelector(".swapMenu-btn").addEventListener("click", swapMenu)
+
+animationText(document.querySelector("#session1 h4"))
