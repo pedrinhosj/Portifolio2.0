@@ -9,7 +9,7 @@ document.querySelectorAll("aside ul li").forEach(li => li.addEventListener('clic
 let simulandoScroll = false;
 
 window.addEventListener('wheel', function (event) {
-  if (!modalCertificates.classList === 'modal-actives') {
+  if (!modalCertificates.classList[0]) {
 
     // Verifica se o evento de rolagem simulado já está em execução
     if (simulandoScroll) {
@@ -34,8 +34,8 @@ window.addEventListener('wheel', function (event) {
 })
 
 window.addEventListener("keydown", (ev) => {
-  if (!modalCertificates.classList === 'modal-actives') {
-    if (ev.key === 'ArrowDown') {
+  if (!modalCertificates.classList[0]) {
+    if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') {
       checkedDirection('para baixo')
     } else {
       checkedDirection('para cima')
@@ -65,5 +65,6 @@ function closemodalCertificates(ev) {
   } else {
     document.removeEventListener('click', closemodalCertificates)
     modalCertificates.style.display = 'none'
+    modalCertificates.classList.remove('modal-active')
   }
 }
