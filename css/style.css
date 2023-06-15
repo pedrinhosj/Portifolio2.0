@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700;800&display=swap');
 @import url(./navigation-menu.css);
 @import url(./home.css);
+@import url(./about.css);
 
 :root {
   --blue: #067a94;
   --defaul-background: #222327;
-  --background-2: #16171a;
+  --background-2: #292a2e;
   --defaul-colorElements: #9fa4bb;
   --defaul-hover: #8a8a9969;
 }

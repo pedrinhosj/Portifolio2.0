@@ -11,6 +11,8 @@
   <title>Meu Portifolio</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="./scripts/index.js" defer type="module"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -40,7 +42,7 @@
       </ul>
     </aside>
     <main>
-      <section id="session1" class="open">
+      <section id="session1">
         <span class="myName">
           <p>Ola eu sou</p>
           <h1>Pedro</h1>
@@ -62,8 +64,53 @@
         </div>
         <h5>Traduzir Pagina</h5>
       </section>
-      <section id="session2">
-        <h1>2</h1>
+      <section id="session2" class="open">
+        <div class="card-image">
+          <img src="./img/pedro.PNG" alt="">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="about-content">
+          <p>Meu nome é João Pedro, tenho 16 anos e sou um desenvolvedor front-end com objetivo de me tornar full stack.
+            Moro na capital de São Paulo, e atualmente estou no segundo ano do ensino médio no periodo da noite.</p>
+          <div class="information">
+            <span class="box-information">
+              <a href="https://www.google.com/maps/place/Paraisopolis" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Ver no<br>Maps</h4>
+              </a>
+            </span>
+            <span class="box-information">
+              <i class="fa-solid fa-book"></i>
+              <h4>Cursos</h4>
+            </span>
+            <span class="box-information">
+              <i class="fa-solid fa-medal"></i>
+              <h4>Certificados</h4>
+            </span>
+          </div>
+          <div id="certificates">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/TypeScript.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/GIteGItHub.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/TopicosAvancados.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/POO.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/DOM.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/JsModerno.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/LogicaDeProgramacao.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/CssModerno.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/Css3.jpeg"></div>
+                <div class="swiper-slide"><img src="./img/Html5.jpeg"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination" id="progress"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="session3">
         <h1>3</h1>
@@ -89,6 +136,7 @@
       <H5>Swap Menu</H5>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,300 @@
+        #session2 {
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 70px;
+          padding: 10px;
+        }
+
+        .card-image {
+          position: relative;
+          display: grid;
+          place-items: center;
+          width: 250px;
+          height: 250px;
+          overflow: hidden;
+          border-radius: 10px;
+        }
+
+        .card-image span:first-of-type {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-image: linear-gradient(to right, transparent, #00d0ff);
+          animation: border1 2s linear infinite;
+        }
+
+        @keyframes border1 {
+          0% {
+            transform: translateX(-100%);
+          }
+
+          100% {
+            transform: translateX(100%);
+          }
+        }
+
+        .card-image span:nth-of-type(2) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 4px;
+          height: 100%;
+          background-image: linear-gradient(to bottom, transparent, #00d0ff);
+          animation: border2 2s linear infinite;
+          animation-delay: 1s;
+        }
+
+        @keyframes border2 {
+          0% {
+            transform: translateY(-100%);
+          }
+
+          100% {
+            transform: translateY(100%);
+          }
+        }
+
+        .card-image span:nth-of-type(3) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 4px;
+          background-image: linear-gradient(to left, transparent, #00d0ff);
+          animation: border3 2s linear infinite;
+        }
+
+        @keyframes border3 {
+          0% {
+            transform: translateX(100%);
+          }
+
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        .card-image span:last-of-type {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 4px;
+          height: 100%;
+          background-image: linear-gradient(to top, transparent, #00d0ff);
+          animation: border4 2s linear infinite;
+          animation-delay: 1s;
+        }
+
+        @keyframes border4 {
+          0% {
+            transform: translateY(100%);
+          }
+
+          100% {
+            transform: translateY(-100%);
+          }
+        }
+
+        #session2 .card-image img {
+          position: relative;
+          z-index: 2;
+          width: 240px;
+          height: 240px;
+          transform: rotate(270deg);
+          border: var(--defaul-background);
+        }
+
+        #session2>span {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        span button {
+          padding: 3px;
+          display: flex;
+          justify-content: space-between;
+          width: 130px;
+          border-radius: 4px;
+          border: none;
+          background-color: var(--defaul-hover);
+        }
+
+        span button h5 {
+          padding: 5px;
+          width: 65px;
+          font-size: 10px;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+
+        h5.selected {
+          color: var(--defaul-colorElements);
+          background-color: var(--background-2);
+        }
+
+        .about-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 350px;
+          height: 250px;
+          color: var(--defaul-colorElements);
+          font-weight: 800;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .information {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          z-index: 1;
+        }
+
+        .box-information {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          width: 70px;
+          height: 65px;
+          gap: 4px;
+          border-radius: 4px;
+
+          background-color: var(--blue);
+          color: var(--defaul-background);
+          cursor: pointer;
+          transition: 1s;
+        }
+
+        .box-information h4 {
+          font-size: 9px;
+        }
+
+        .box-information a {
+          width: 100%;
+          height: 100%;
+          padding: 6px;
+          color: var(--defaul-background);
+          text-decoration: none;
+        }
+
+        #courses-active {
+          padding: 0 15px;
+          width: 100%;
+        }
+
+        #courses-active li {
+          white-space: nowrap;
+          text-align: start;
+          width: 100%;
+          font-size: 11px;
+        }
+
+        .about-content div#certificates {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          display: none;
+          border: 4px solid var(--blue);
+        }
+
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+
+        #progress {
+          font-weight: 900;
+          color: var(--defaul-colorElements);
+        }
+
+        @media(max-width: 689px) {
+          #session2 {
+            gap: 10px;
+          }
+
+          .card-image {
+            width: 180px;
+            height: 180px;
+          }
+
+          #session2 .card-image img {
+            width: 170px;
+            height: 170px;
+          }
+
+          .about-content {
+            width: 320px;
+          }
+        }
+
+        @media(max-width: 535px) {
+          #session2 {
+            flex-direction: column;
+            padding: 0 0 60px 0;
+          }
+
+          .about-content {
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 15px;
+          }
+
+          #courses-active li {
+            font-size: 10px;
+          }
+        }
+
+        @media(max-width: 330px) {
+          #session2 {
+            padding: 0;
+          }
+
+          .about-content {
+            width: 250px;
+          }
+
+          .about-content p {
+            font-size: 11px;
+          }
+
+          .box-information {
+            width: 50px;
+            height: 50px;
+          }
+
+          .box-information a {
+            height: auto;
+          }
+
+          .box-information h4 {
+            display: none;
+          }
+
+          #courses-active {
+            padding: 7px;
+          }
+
+          #courses-active li {
+            list-style: none;
+            font-size: 8px;
+          }
+
+          .about-content div#certificates {
+            height: 200px;
+          }
+        }
